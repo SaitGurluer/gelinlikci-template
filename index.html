@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelinlikçi — Zarafetin Adresi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="Ana sayfa">
+        <span class="navbar__logo-icon" aria-hidden="true">✦</span>
+        <span class="navbar__logo-text">
+          <span class="navbar__logo-name">Lumière</span>
+          <span class="navbar__logo-tagline">Bridal Atelier</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="navbar__nav" aria-label="Ana menü">
+        <ul class="navbar__list">
+          <li><a href="#anasayfa" class="navbar__link navbar__link--active">Ana Sayfa</a></li>
+          <li><a href="#koleksiyon" class="navbar__link">Koleksiyon</a></li>
+          <li><a href="#hakkimizda" class="navbar__link">Hakkımızda</a></li>
+          <li><a href="#galeri" class="navbar__link">Galeri</a></li>
+          <li><a href="#iletisim" class="navbar__link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="navbar__actions">
+        <button class="navbar__icon-btn" aria-label="Ara">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="M20 20l-4-4"/>
+          </svg>
+        </button>
+        <a href="#randevu" class="navbar__cta">Randevu Al</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="Mobil menü">
+        <ul class="navbar__mobile-list">
+          <li><a href="#anasayfa" class="navbar__mobile-link">Ana Sayfa</a></li>
+          <li><a href="#koleksiyon" class="navbar__mobile-link">Koleksiyon</a></li>
+          <li><a href="#hakkimizda" class="navbar__mobile-link">Hakkımızda</a></li>
+          <li><a href="#galeri" class="navbar__mobile-link">Galeri</a></li>
+          <li><a href="#iletisim" class="navbar__mobile-link">İletişim</a></li>
+          <li><a href="#randevu" class="navbar__mobile-cta">Randevu Al</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Demo içerik — navbar testi için -->
+  <main style="height: 200vh; padding-top: 120px; text-align: center; color: #888; font-family: Montserrat, sans-serif;">
+    <p>Scroll yaparak navbar'ın şeffaflık efektini test edebilirsiniz.</p>
+  </main>
+
+  <script src="js/navbar.js"></script>
+</body>
+</html>

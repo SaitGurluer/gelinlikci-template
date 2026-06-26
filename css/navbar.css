@@ -7,7 +7,7 @@
   --nav-text-muted: #8a7e76;
   --nav-accent: #b8956a;
   --nav-accent-hover: #9a7850;
-  --nav-height: 80px;
+  --nav-height: 100px;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -62,7 +62,7 @@ body {
 }
 
 .navbar__logo-icon {
-  font-size: 1.4rem;
+  font-size: 1.65rem;
   color: var(--nav-accent);
   line-height: 1;
 }
@@ -75,14 +75,14 @@ body {
 
 .navbar__logo-name {
   font-family: var(--font-serif);
-  font-size: 1.65rem;
+  font-size: 1.95rem;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
 
 .navbar__logo-tagline {
   font-family: var(--font-sans);
-  font-size: 0.6rem;
+  font-size: 0.68rem;
   font-weight: 400;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -106,7 +106,7 @@ body {
 .navbar__link {
   position: relative;
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -150,8 +150,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border: none;
   background: transparent;
   color: var(--nav-text-muted);
@@ -167,14 +167,14 @@ body {
 
 .navbar__cta {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   background: var(--nav-accent);
-  padding: 0.75rem 1.5rem;
+  padding: 0.9rem 1.75rem;
   border-radius: 2px;
   transition: background var(--transition), transform 0.2s ease;
 }
@@ -190,8 +190,8 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -306,7 +306,7 @@ body {
   }
 
   .navbar__logo-name {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .navbar__icon-btn {

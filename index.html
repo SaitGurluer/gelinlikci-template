@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
 
@@ -67,11 +69,206 @@
     </div>
   </header>
 
-  <!-- Demo içerik — navbar testi için -->
-  <main style="height: 200vh; padding-top: 120px; text-align: center; color: #888; font-family: Montserrat, sans-serif;">
-    <p>Scroll yaparak navbar'ın şeffaflık efektini test edebilirsiniz.</p>
-  </main>
+  <!-- Hero Slider -->
+  <section class="hero" id="anasayfa" aria-label="Öne çıkan gelinlikler">
+    <div class="hero__slider" id="heroSlider">
+
+      <article class="hero__slide hero__slide--active">
+        <img class="hero__slide-image" src="img/img1.jpg" alt="Aurora Prenses Gelinlik">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__content-inner">
+            <span class="hero__badge">Yeni Sezon</span>
+            <h1 class="hero__title">Aurora Prenses</h1>
+            <p class="hero__desc">İşlemeli dantel detayları ve zarif prenses kesimiyle hayalinizdeki gelinliği keşfedin.</p>
+            <p class="hero__price">48.500 ₺</p>
+            <div class="hero__actions">
+              <a href="#koleksiyon" class="hero__btn hero__btn--primary">İncele</a>
+              <a href="#randevu" class="hero__btn hero__btn--outline">Satın Al</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="hero__slide">
+        <img class="hero__slide-image" src="img/img2.jpg" alt="Belle A-Lin Gelinlik">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__content-inner">
+            <span class="hero__badge">En Çok Tercih Edilen</span>
+            <h1 class="hero__title">Belle A-Lin</h1>
+            <p class="hero__desc">Sade ve şık A-lin kesim, her vücut tipine uyum sağlayan zamansız bir tasarım.</p>
+            <p class="hero__price">36.000 ₺</p>
+            <div class="hero__actions">
+              <a href="#koleksiyon" class="hero__btn hero__btn--primary">İncele</a>
+              <a href="#randevu" class="hero__btn hero__btn--outline">Satın Al</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="hero__slide">
+        <img class="hero__slide-image" src="img/img3.jpg" alt="Celeste İşlemeli Gelinlik">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__content-inner">
+            <span class="hero__badge">Özel Koleksiyon</span>
+            <h1 class="hero__title">Celeste İşlemeli</h1>
+            <p class="hero__desc">El işçiliği boncuk ve inci detaylarıyla lüks ve sofistike bir görünüm.</p>
+            <p class="hero__price">62.000 ₺</p>
+            <div class="hero__actions">
+              <a href="#koleksiyon" class="hero__btn hero__btn--primary">İncele</a>
+              <a href="#randevu" class="hero__btn hero__btn--outline">Satın Al</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="hero__slide">
+        <img class="hero__slide-image" src="img/img4.jpg" alt="Dahlia Bohem Gelinlik">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__content-inner">
+            <span class="hero__badge">Bohem Serisi</span>
+            <h1 class="hero__title">Dahlia Bohem</h1>
+            <p class="hero__desc">Hafif tül ve romantik detaylarla doğada ve plajda düğünler için ideal.</p>
+            <p class="hero__price">41.500 ₺</p>
+            <div class="hero__actions">
+              <a href="#koleksiyon" class="hero__btn hero__btn--primary">İncele</a>
+              <a href="#randevu" class="hero__btn hero__btn--outline">Satın Al</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Önceki slayt">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Sonraki slayt">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+
+    <div class="hero__dots" role="tablist" aria-label="Slayt seçimi">
+      <button class="hero__dot hero__dot--active" role="tab" aria-selected="true" aria-label="Slayt 1"></button>
+      <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slayt 2"></button>
+      <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slayt 3"></button>
+      <button class="hero__dot" role="tab" aria-selected="false" aria-label="Slayt 4"></button>
+    </div>
+  </section>
+
+  <!-- Gelinlik Kartları -->
+  <section class="collection" id="koleksiyon">
+    <header class="collection__header">
+      <span class="collection__label">2026 Koleksiyonu</span>
+      <h2 class="collection__title">Gelinlik Modellerimiz</h2>
+      <p class="collection__subtitle">Her biri özenle tasarlanmış modellerimizi keşfedin. Prova randevusu alarak size en uygun gelinliği birlikte bulalım.</p>
+    </header>
+
+    <div class="collection__grid">
+
+      <article class="card">
+        <div class="card__image-wrap">
+          <img class="card__image" src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Aurora Prenses Gelinlik">
+          <span class="card__badge">Yeni</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Aurora Prenses</h3>
+          <p class="card__category">Prenses Kesim · Dantel</p>
+          <p class="card__price">48.500 ₺</p>
+          <div class="card__actions">
+            <a href="#" class="card__btn card__btn--outline">İncele</a>
+            <a href="#" class="card__btn card__btn--primary">Satın Al</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__image-wrap">
+          <img class="card__image" src="https://images.unsplash.com/photo-1594556810128-2df045aefa64?w=600&q=80" alt="Belle A-Lin Gelinlik">
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Belle A-Lin</h3>
+          <p class="card__category">A-Lin · Saten</p>
+          <p class="card__price">36.000 ₺</p>
+          <div class="card__actions">
+            <a href="#" class="card__btn card__btn--outline">İncele</a>
+            <a href="#" class="card__btn card__btn--primary">Satın Al</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__image-wrap">
+          <img class="card__image" src="https://images.unsplash.com/photo-1583394838336-acd977736fc2?w=600&q=80" alt="Celeste İşlemeli Gelinlik">
+          <span class="card__badge">Özel</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Celeste İşlemeli</h3>
+          <p class="card__category">Balık · İşlemeli</p>
+          <p class="card__price">62.000 ₺</p>
+          <div class="card__actions">
+            <a href="#" class="card__btn card__btn--outline">İncele</a>
+            <a href="#" class="card__btn card__btn--primary">Satın Al</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__image-wrap">
+          <img class="card__image" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&q=80" alt="Dahlia Bohem Gelinlik">
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Dahlia Bohem</h3>
+          <p class="card__category">Bohem · Tül</p>
+          <p class="card__price">41.500 ₺</p>
+          <div class="card__actions">
+            <a href="#" class="card__btn card__btn--outline">İncele</a>
+            <a href="#" class="card__btn card__btn--primary">Satın Al</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__image-wrap">
+          <img class="card__image" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Elena Klasik Gelinlik">
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Elena Klasik</h3>
+          <p class="card__category">Klasik · Organze</p>
+          <p class="card__price">39.000 ₺</p>
+          <div class="card__actions">
+            <a href="#" class="card__btn card__btn--outline">İncele</a>
+            <a href="#" class="card__btn card__btn--primary">Satın Al</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__image-wrap">
+          <img class="card__image" src="https://images.unsplash.com/photo-1485278537138-4e8911a124cb?w=600&q=80" alt="Florence Saten Gelinlik">
+          <span class="card__badge">İndirim</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Florence Saten</h3>
+          <p class="card__category">Minimal · Saten</p>
+          <p class="card__price">33.500 ₺</p>
+          <div class="card__actions">
+            <a href="#" class="card__btn card__btn--outline">İncele</a>
+            <a href="#" class="card__btn card__btn--primary">Satın Al</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
 
   <script src="js/navbar.js"></script>
+  <script src="js/hero-slider.js"></script>
 </body>
 </html>
